@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+.header-container {
+  background-color: #5C687C;
+  display: flex;
+
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  flex-basis: 268px; /* parte I, requisito 1 */
+}
+
+.menu-container {
+  display: flex;
+  flex-basis: 500px; /* parte I, requisito 1 */
+  order: 1; /* parte I, requisito 2 */
+  flex-grow: 1; /* parte I, requisito 3 */
+  align-self: center; /* parte I, requisito 4 */
+}
+
+.menu-container ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.menu-container li {
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  list-style: none;
+  margin-right: 10px;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 700px; /* parte II, requisito 3 */
+  flex-grow: 10; /* parte II, requisito 4 */
+}
+
+.movie-container h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-container div {
+  align-items: center;
+  background-color: #5C687C;
+  border: black solid 1px;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  margin: 10px;
+  flex-basis: 16% ; /* parte II, requisito 3 */
+  flex-grow: 1; /* parte II, requisito 5 */
+}
+
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex-basis: 350px; /* parte II, requisito 1 e 2 */
+  align-self: center;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 20px;
+}
+
+.aside-container h3, h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.aside-container p {
+  margin: 10px 0;
+  text-align: justify;
+}
